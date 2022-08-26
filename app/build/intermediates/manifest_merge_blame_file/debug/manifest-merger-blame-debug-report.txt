@@ -1,0 +1,139 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.namanbajaj.quizapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:6:5-80
+11-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:6:22-77
+12
+13    <application
+13-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:8:5-58:19
+14        android:allowBackup="true"
+14-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:9:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.8.0] C:\Users\naman\.gradle\caches\transforms-3\319818de8066db9dee1015fa48896948\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+16        android:dataExtractionRules="@xml/data_extraction_rules"
+16-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:10:9-65
+17        android:debuggable="true"
+18        android:fullBackupContent="@xml/backup_rules"
+18-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:11:9-54
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:12:9-43
+20        android:label="@string/app_name"
+20-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:13:9-41
+21        android:roundIcon="@mipmap/ic_launcher"
+21-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:14:9-48
+22        android:supportsRtl="true"
+22-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:15:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.QuizApp" >
+24-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:16:9-45
+25        <activity
+25-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:18:9-21:51
+26            android:name="com.namanbajaj.quizapp.AddOrEditQuiz"
+26-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:19:13-42
+27            android:exported="false"
+27-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:20:13-37
+28            android:screenOrientation="portrait" />
+28-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:21:13-49
+29        <activity
+29-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:22:9-25:51
+30            android:name="com.namanbajaj.quizapp.EditQuizQuestions"
+30-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:23:13-46
+31            android:exported="false"
+31-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:24:13-37
+32            android:screenOrientation="portrait" />
+32-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:25:13-49
+33        <activity
+33-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:26:9-29:51
+34            android:name="com.namanbajaj.quizapp.FinalScore"
+34-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:27:13-39
+35            android:exported="false"
+35-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:28:13-37
+36            android:screenOrientation="portrait" />
+36-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:29:13-49
+37        <activity
+37-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:30:9-33:51
+38            android:name="com.namanbajaj.quizapp.EditQuiz"
+38-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:31:13-37
+39            android:exported="false"
+39-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:32:13-37
+40            android:screenOrientation="portrait" />
+40-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:33:13-49
+41        <activity
+41-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:34:9-37:51
+42            android:name="com.namanbajaj.quizapp.NewQuiz"
+42-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:35:13-36
+43            android:exported="false"
+43-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:36:13-37
+44            android:screenOrientation="portrait" />
+44-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:37:13-49
+45        <activity
+45-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:39:9-42:51
+46            android:name="com.namanbajaj.quizapp.DoQuiz"
+46-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:40:13-35
+47            android:exported="false"
+47-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:41:13-37
+48            android:screenOrientation="portrait" />
+48-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:42:13-49
+49        <activity
+49-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:43:9-52:20
+50            android:name="com.namanbajaj.quizapp.QuizList"
+50-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:44:13-37
+51            android:exported="true"
+51-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:45:13-36
+52            android:screenOrientation="portrait" >
+52-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:46:13-49
+53            <intent-filter>
+53-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:48:13-51:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:49:17-69
+54-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:49:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:50:17-77
+56-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:50:27-74
+57            </intent-filter>
+58        </activity>
+59        <activity
+59-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:53:9-57:20
+60            android:name="com.namanbajaj.quizapp.MainActivity"
+60-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:54:13-41
+61            android:exported="true"
+61-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:55:13-36
+62            android:screenOrientation="portrait" >
+62-->C:\Users\naman\OneDrive\Transfer\QuizApp\app\src\main\AndroidManifest.xml:56:13-49
+63        </activity>
+64
+65        <provider
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\naman\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+66            android:name="androidx.startup.InitializationProvider"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\naman\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+67            android:authorities="com.namanbajaj.quizapp.androidx-startup"
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\naman\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+68            android:exported="false" >
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\naman\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+69            <meta-data
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\naman\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\naman\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+71                android:value="androidx.startup" />
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\naman\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+72            <meta-data
+72-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\naman\.gradle\caches\transforms-3\a12ed9220754cce2dddf3ed6d58bf3a3\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+73                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+73-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\naman\.gradle\caches\transforms-3\a12ed9220754cce2dddf3ed6d58bf3a3\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+74                android:value="androidx.startup" />
+74-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\naman\.gradle\caches\transforms-3\a12ed9220754cce2dddf3ed6d58bf3a3\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+75        </provider>
+76    </application>
+77
+78</manifest>

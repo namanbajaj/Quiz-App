@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/naman/Documents/Programming/Kotlin/Kotlin-Learning/QuizApp/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/naman/Documents/Programming/Kotlin/Kotlin-Learning/QuizApp/app/src/main/res/layout/activity_quiz_list.xml" value="0.5" />
+        <entry key="..\:/Users/naman/Documents/Programming/Kotlin/Kotlin-Learning/QuizApp/app/src/main/res/layout/background.xml" value="0.5054347826086957" />
+        <entry key="..\:/Users/naman/Documents/Programming/Projects/QuizApp/app/src/main/res/drawable/border.xml" value="0.3155" />
+        <entry key="..\:/Users/naman/Documents/Programming/Projects/QuizApp/app/src/main/res/drawable/list_selector.xml" value="0.4185" />
+        <entry key="..\:/Users/naman/Documents/Programming/Projects/QuizApp/app/src/main/res/drawable/selected_border.xml" value="0.3165" />
+        <entry key="..\:/Users/naman/Documents/Programming/Projects/QuizApp/app/src/main/res/layout/activity_create_quiz.xml" value="0.5054347826086957" />
+        <entry key="..\:/Users/naman/Documents/Programming/Projects/QuizApp/app/src/main/res/layout/activity_do_quiz.xml" value="0.5054347826086957" />
+        <entry key="..\:/Users/naman/Documents/Programming/Projects/QuizApp/app/src/main/res/layout/activity_edit_quiz.xml" value="0.5054347826086957" />
+        <entry key="..\:/Users/naman/Documents/Programming/Projects/QuizApp/app/src/main/res/layout/activity_final_score.xml" value="0.5054347826086957" />
+        <entry key="..\:/Users/naman/Documents/Programming/Projects/QuizApp/app/src/main/res/layout/activity_main.xml" value="0.5054347826086957" />
+        <entry key="..\:/Users/naman/Documents/Programming/Projects/QuizApp/app/src/main/res/layout/activity_quiz_list.xml" value="0.4134020618556701" />
+        <entry key="..\:/Users/naman/OneDrive/Transfer/QuizApp/app/src/main/res/drawable/border.xml" value="0.3165" />
+        <entry key="..\:/Users/naman/OneDrive/Transfer/QuizApp/app/src/main/res/drawable/correct_option_border_bg.xml" value="0.4175" />
+        <entry key="..\:/Users/naman/OneDrive/Transfer/QuizApp/app/src/main/res/drawable/default_option_border_bg.xml" value="0.3155" />
+        <entry key="..\:/Users/naman/OneDrive/Transfer/QuizApp/app/src/main/res/drawable/selected_option_border_bg.xml" value="0.4175" />
+        <entry key="..\:/Users/naman/OneDrive/Transfer/QuizApp/app/src/main/res/drawable/wrong_option_border_bg.xml" value="0.4175" />
+        <entry key="..\:/Users/naman/OneDrive/Transfer/QuizApp/app/src/main/res/layout/activity_add_or_edit_quiz.xml" value="0.5" />
+        <entry key="..\:/Users/naman/OneDrive/Transfer/QuizApp/app/src/main/res/layout/activity_create_quiz.xml" value="0.33" />
+        <entry key="..\:/Users/naman/OneDrive/Transfer/QuizApp/app/src/main/res/layout/activity_do_quiz.xml" value="0.31354166666666666" />
+        <entry key="..\:/Users/naman/OneDrive/Transfer/QuizApp/app/src/main/res/layout/activity_edit_quiz.xml" value="0.33" />
+        <entry key="..\:/Users/naman/OneDrive/Transfer/QuizApp/app/src/main/res/layout/activity_edit_quiz_questions.xml" value="0.5" />
+        <entry key="..\:/Users/naman/OneDrive/Transfer/QuizApp/app/src/main/res/layout/activity_final_score.xml" value="0.31354166666666666" />
+        <entry key="..\:/Users/naman/OneDrive/Transfer/QuizApp/app/src/main/res/layout/activity_main.xml" value="0.31354166666666666" />
+        <entry key="..\:/Users/naman/OneDrive/Transfer/QuizApp/app/src/main/res/layout/activity_quiz_list.xml" value="0.31985294117647056" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

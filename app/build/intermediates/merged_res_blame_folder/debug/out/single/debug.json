@@ -1,0 +1,186 @@
+[
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\drawable_ic_bg.png.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\drawable\\ic_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\layout_activity_edit_quiz.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\layout\\activity_edit_quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\drawable_wrong_option_border_bg.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\drawable\\wrong_option_border_bg.xml"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\layout_activity_create_quiz.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\layout\\activity_create_quiz.xml"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\layout_activity_edit_quiz_questions.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\layout\\activity_edit_quiz_questions.xml"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\layout_activity_do_quiz.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\layout\\activity_do_quiz.xml"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\layout_activity_quiz_list.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\layout\\activity_quiz_list.xml"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-pngs-25:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\drawable_default_option_border_bg.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\drawable\\default_option_border_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\drawable_selected_option_border_bg.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\drawable\\selected_option_border_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\layout_activity_add_or_edit_quiz.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\layout\\activity_add_or_edit_quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\layout_activity_final_score.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\layout\\activity_final_score.xml"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\drawable_correct_option_border_bg.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\drawable\\correct_option_border_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-merged_res-30:\\drawable_border.xml.flat",
+        "source": "C:\\Users\\naman\\.gradle\\daemon\\7.3.3\\com.namanbajaj.quizapp-main-32:\\drawable\\border.xml"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.namanbajaj.quizapp-merged_res-30:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.namanbajaj.quizapp-main-32:/mipmap-xhdpi/ic_launcher_foreground.png"
+    }
+]
