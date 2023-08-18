@@ -35,6 +35,7 @@
                 android:id="@+id/cardView"
                 android:layout_width="351dp"
                 android:layout_height="47dp"
+                android:backgroundTint="@color/white"
                 app:cardCornerRadius="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="30dp"
@@ -81,6 +82,7 @@
                     android:layout_width="300dp"
                     android:layout_height="92dp"
                     android:layout_marginBottom="25dp"
+                    android:backgroundTint="@color/white"
                     app:cardCornerRadius="20dp">
 
                     <LinearLayout
@@ -96,6 +98,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:hint="Question (Required)"
+                            android:textColorHint="#808080"
                             android:textColor="#000000"
                             android:textSize="20sp" />
 
@@ -108,6 +111,7 @@
                     android:layout_width="300dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="15dp"
+                    android:backgroundTint="@color/white"
                     app:cardCornerRadius="20dp">
 
                     <LinearLayout
@@ -123,6 +127,7 @@
                             android:layout_height="match_parent"
                             android:hint="Answer Choice 1 (Required)"
                             android:textColor="#000000"
+                            android:textColorHint="#808080"
                             android:textSize="20sp" />
 
                     </LinearLayout>
@@ -133,6 +138,7 @@
                     android:layout_width="300dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="15dp"
+                    android:backgroundTint="@color/white"
                     app:cardCornerRadius="20dp">
 
                     <LinearLayout
@@ -148,6 +154,7 @@
                             android:layout_height="match_parent"
                             android:hint="Answer Choice 2 (Required)"
                             android:textColor="#000000"
+                            android:textColorHint="#808080"
                             android:textSize="20sp" />
 
                     </LinearLayout>
@@ -158,6 +165,7 @@
                     android:layout_width="300dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="15dp"
+                    android:backgroundTint="@color/white"
                     app:cardCornerRadius="20dp">
 
                     <LinearLayout
@@ -173,6 +181,7 @@
                             android:layout_height="match_parent"
                             android:hint="Answer Choice 3 (Optional)"
                             android:textColor="#000000"
+                            android:textColorHint="#808080"
                             android:textSize="20sp" />
 
                     </LinearLayout>
@@ -183,6 +192,7 @@
                     android:layout_width="300dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="15dp"
+                    android:backgroundTint="@color/white"
                     app:cardCornerRadius="20dp">
 
                     <LinearLayout
@@ -198,6 +208,7 @@
                             android:layout_height="match_parent"
                             android:hint="Answer Choice 4 (Optional)"
                             android:textColor="#000000"
+                            android:textColorHint="#808080"
                             android:textSize="20sp" />
 
                     </LinearLayout>
@@ -212,6 +223,7 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="20dp"
                 android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -247,6 +259,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textColor="@color/black"
                             android:text="1" />
 
                         <RadioButton
@@ -254,6 +267,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textColor="@color/black"
                             android:text="2" />
 
                         <RadioButton
@@ -261,6 +275,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textColor="@color/black"
                             android:text="3" />
 
                         <RadioButton
@@ -268,6 +283,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textColor="@color/black"
                             android:text="4" />
 
                     </RadioGroup>
@@ -293,7 +309,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
-                    android:backgroundTint="#000000"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/white"
                     android:text="Edit" />
 
                 <Button
@@ -301,14 +318,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
-                    android:backgroundTint="#000000"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/white"
                     android:text="Delete" />
 
                 <Button
                     android:id="@+id/doneAdding"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#000000"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/white"
                     android:text="Done" />
             </LinearLayout>
 
@@ -327,14 +346,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
-                    android:backgroundTint="#000000"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/white"
                     android:text="Previous Question" />
 
                 <Button
                     android:id="@+id/nextQuestion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#000000"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/white"
                     android:text="Next Question" />
             </LinearLayout>
 

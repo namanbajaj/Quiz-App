@@ -4,14 +4,14 @@
             "outputFile": "com.namanbajaj.quizapp-mergeDebugResources-28:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\naman\\OneDrive\\Transfer\\QuizApp\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\naman\\Desktop\\Programming\\Projects\\Quiz-App\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "100",
+                        "startOffsets": "102",
                         "endLines": "15",
                         "endColumns": "12",
-                        "endOffsets": "872"
+                        "endOffsets": "887"
                     },
                     "to": {
                         "startLines": "33",

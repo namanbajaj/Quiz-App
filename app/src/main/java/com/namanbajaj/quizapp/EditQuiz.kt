@@ -5,7 +5,10 @@ import android.app.ActivityOptions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.HapticFeedbackConstants
+import android.view.KeyEvent
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.*
 import java.lang.Exception
 
@@ -153,9 +156,10 @@ class EditQuiz : AppCompatActivity() {
         cursor?.close()
 
         val finished = findViewById<Button>(R.id.doneAdding)
-        finished.setOnClickListener {
+        finished.setOnClickListener { view ->
             if(!currentlyEditing)
             {
+                view.performHapticFeedback(HapticFeedbackConstants.CONFIRM)
                 val intent = Intent(this, QuizList::class.java)
                 startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
             }
@@ -164,6 +168,7 @@ class EditQuiz : AppCompatActivity() {
                 var selectedAnswer = rightAnswerRadio.checkedRadioButtonId
                 var radioButton = findViewById<RadioButton>(selectedAnswer)
                 if(questionField.text.toString().isEmpty() || answer1Field.text.toString().isEmpty() || answer2Field.text.toString().isEmpty() || selectedAnswer == -1){
+                    view.performHapticFeedback(HapticFeedbackConstants.REJECT)
                     if(questionField.text.toString().isEmpty())
                         makeToast("Question cannot be empty")
                     if(answer1Field.text.toString().isEmpty())
@@ -174,15 +179,19 @@ class EditQuiz : AppCompatActivity() {
                         makeToast("Select an answer choice")
                 }
                 else if((answer3Field.text.toString().isEmpty() && radioButton.text.toString().equals("3")) || (answer4Field.text.toString().isEmpty()) && radioButton.text.toString().equals("4")){
+                    view.performHapticFeedback(HapticFeedbackConstants.REJECT)
                     if(answer3Field.text.toString().isEmpty() && radioButton.text.toString().equals("3"))
                         makeToast("Answer 3 must be filled in to be an answer")
                     if(answer4Field.text.toString().isEmpty() && radioButton.text.toString().equals("4"))
                         makeToast("Answer 4 must be filled in to be an answer")
                 }
-                else if(anyMatch(answer1Field.text.toString(), answer2Field.text.toString(), answer3Field.text.toString(), answer4Field.text.toString()))
+                else if(anyMatch(answer1Field.text.toString(), answer2Field.text.toString(), answer3Field.text.toString(), answer4Field.text.toString())){
                     makeToast("Cannot have duplicate answers")
-                else if(answer3Field.text.toString().isEmpty() && !answer4Field.text.toString().isEmpty())
+                }
+                else if(answer3Field.text.toString().isEmpty() && !answer4Field.text.toString().isEmpty()){
+                    view.performHapticFeedback(HapticFeedbackConstants.REJECT)
                     makeToast("Answer 3 must be filled in before answer 4")
+                }
                 else {
                     val db2 = DBHelper(this, null)
                     db2.deleteQuestion(newName.toString(), question.toString())
@@ -203,8 +212,10 @@ class EditQuiz : AppCompatActivity() {
                     }
                     cursor2?.close()
 
-                    if (foundQ)
+                    if (foundQ){
+                        view.performHapticFeedback(HapticFeedbackConstants.REJECT)
                         makeToast("Question already present")
+                    }
                     else {
                         val newAnswer1 = answer1Field.text.toString()
                         val newAnswer2 = answer2Field.text.toString()
@@ -221,9 +232,11 @@ class EditQuiz : AppCompatActivity() {
                         try {
                             db2.addQuiz(newName.toString(), newQuestion, answers, rightAnswer)
                             makeToast("Insertion successful")
+                            view.performHapticFeedback(HapticFeedbackConstants.CONFIRM)
                         } catch (e: Exception) {
                             e.printStackTrace()
                             makeToast("Insertion failed")
+                            view.performHapticFeedback(HapticFeedbackConstants.CONFIRM)
                         }
 
                         currentlyEditing = false
@@ -252,7 +265,9 @@ class EditQuiz : AppCompatActivity() {
         prev = findViewById<Button>(R.id.prevQuestion)
         next = findViewById<Button>(R.id.nextQuestion)
 
-        editQuestion.setOnClickListener {
+        editQuestion.setOnClickListener { view ->
+            view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
+
             if(currentlyEditing){
                 currentlyEditing = false
                 deleteQuestion.visibility = View.VISIBLE
@@ -309,12 +324,14 @@ class EditQuiz : AppCompatActivity() {
 
         }
 
-        next.setOnClickListener {
+        next.setOnClickListener { view ->
 //            questionField.text = ""
 //            answer1Field.text = ""
 //            answer2Field.text = ""
 //            answer3Field.text = ""
 //            answer4Field.text = ""
+
+            view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
 
             curIndex++
             if(curIndex < questions.size){
@@ -324,12 +341,14 @@ class EditQuiz : AppCompatActivity() {
                 curIndex = questions.size - 1
         }
 
-        prev.setOnClickListener {
+        prev.setOnClickListener { view ->
 //            questionField.text = ""
 //            answer1Field.text = ""
 //            answer2Field.text = ""
 //            answer3Field.text = ""
 //            answer4Field.text = ""
+
+            view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
 
             curIndex--
             if(curIndex >= 0){
@@ -340,10 +359,13 @@ class EditQuiz : AppCompatActivity() {
         }
 
         val deleteButton = findViewById<Button>(R.id.deleteQuestion)
-        deleteButton.setOnClickListener {
-            if(questions.size == 1)
+        deleteButton.setOnClickListener { view ->
+            if(questions.size == 1){
+                view.performHapticFeedback(HapticFeedbackConstants.REJECT)
                 makeToast("Cannot have quiz with 0 questions, delete quiz or add questions")
+            }
             else {
+                view.performHapticFeedback(HapticFeedbackConstants.CONFIRM)
                 questions.removeAt(curIndex)
                 curIndex = 0
                 db.deleteQuestion(quizName, questionField.text.toString())
@@ -351,6 +373,8 @@ class EditQuiz : AppCompatActivity() {
                 makeToast("Question deleted")
             }
         }
+
+        addHideKeyboardOnEnter()
     }
 
     @SuppressLint("Range")
@@ -425,5 +449,62 @@ class EditQuiz : AppCompatActivity() {
                 || (answer2 == answer3)
                 || (answer2 == answer4)
                 || (answer3 == answer4 && answer3 != "" && answer4 != "")
+    }
+
+    fun addHideKeyboardOnEnter(){
+        questionField.setOnKeyListener(object : View.OnKeyListener {
+            override fun onKey(arg0: View?, arg1: Int, event: KeyEvent): Boolean {
+                if (event.action === KeyEvent.ACTION_DOWN && arg1 == KeyEvent.KEYCODE_ENTER) {
+                    val imm: InputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                    imm.hideSoftInputFromWindow(questionField.windowToken, 0)
+                    return true
+                }
+                return false
+            }
+        })
+
+        answer1Field.setOnKeyListener(object : View.OnKeyListener {
+            override fun onKey(arg0: View?, arg1: Int, event: KeyEvent): Boolean {
+                if (event.action === KeyEvent.ACTION_DOWN && arg1 == KeyEvent.KEYCODE_ENTER) {
+                    val imm: InputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                    imm.hideSoftInputFromWindow(answer1Field.windowToken, 0)
+                    return true
+                }
+                return false
+            }
+        })
+
+        answer2Field.setOnKeyListener(object : View.OnKeyListener {
+            override fun onKey(arg0: View?, arg1: Int, event: KeyEvent): Boolean {
+                if (event.action === KeyEvent.ACTION_DOWN && arg1 == KeyEvent.KEYCODE_ENTER) {
+                    val imm: InputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                    imm.hideSoftInputFromWindow(answer2Field.windowToken, 0)
+                    return true
+                }
+                return false
+            }
+        })
+
+        answer3Field.setOnKeyListener(object : View.OnKeyListener {
+            override fun onKey(arg0: View?, arg1: Int, event: KeyEvent): Boolean {
+                if (event.action === KeyEvent.ACTION_DOWN && arg1 == KeyEvent.KEYCODE_ENTER) {
+                    val imm: InputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                    imm.hideSoftInputFromWindow(answer3Field.windowToken, 0)
+                    return true
+                }
+                return false
+            }
+        })
+
+        answer4Field.setOnKeyListener(object : View.OnKeyListener {
+            override fun onKey(arg0: View?, arg1: Int, event: KeyEvent): Boolean {
+                if (event.action === KeyEvent.ACTION_DOWN && arg1 == KeyEvent.KEYCODE_ENTER) {
+                    val imm: InputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                    imm.hideSoftInputFromWindow(answer4Field.windowToken, 0)
+                    return true
+                }
+                return false
+            }
+        })
     }
 }

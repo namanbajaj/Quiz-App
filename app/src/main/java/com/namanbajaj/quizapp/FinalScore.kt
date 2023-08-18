@@ -56,7 +56,8 @@ class FinalScore : AppCompatActivity() {
         }
 
         val goHome = findViewById<TextView>(R.id.home)
-        goHome.setOnClickListener {
+        goHome.setOnClickListener { view ->
+            view.performHapticFeedback(android.view.HapticFeedbackConstants.VIRTUAL_KEY)
             val intent = Intent(this, QuizList::class.java)
             startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
         }
