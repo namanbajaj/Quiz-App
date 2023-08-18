@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.namanbajaj.quizapp-mergeDebugResources-28:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.namanbajaj.quizapp-mergeDebugResources-27:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\naman\\.gradle\\caches\\transforms-3\\25fdb4b5729408368178052da17f5e34\\transformed\\appcompat-1.5.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "C:\\Users\\naman\\.gradle\\caches\\transforms-3\\91eb16b120a9fc489496a44f7ccadb60\\transformed\\appcompat-1.5.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

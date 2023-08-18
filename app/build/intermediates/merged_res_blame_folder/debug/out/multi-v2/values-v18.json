@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.namanbajaj.quizapp-mergeDebugResources-28:/values-v18/values-v18.xml",
+            "outputFile": "com.namanbajaj.quizapp-mergeDebugResources-27:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\naman\\.gradle\\caches\\transforms-3\\25fdb4b5729408368178052da17f5e34\\transformed\\appcompat-1.5.0\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\naman\\.gradle\\caches\\transforms-3\\91eb16b120a9fc489496a44f7ccadb60\\transformed\\appcompat-1.5.0\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

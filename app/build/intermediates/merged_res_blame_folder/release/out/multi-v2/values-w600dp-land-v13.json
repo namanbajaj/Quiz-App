@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.namanbajaj.quizapp-mergeReleaseResources-27:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\naman\\.gradle\\caches\\transforms-3\\4150df218e31421575260ee8ffd8a5cf\\transformed\\material-1.6.1\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    }
+                }
+            ]
+        }
+    ]
+}

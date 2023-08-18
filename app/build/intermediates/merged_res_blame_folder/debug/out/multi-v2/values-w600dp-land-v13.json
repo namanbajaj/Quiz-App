@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.namanbajaj.quizapp-mergeDebugResources-28:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "com.namanbajaj.quizapp-mergeDebugResources-27:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\naman\\.gradle\\caches\\transforms-3\\9d6778b007a14e0c6659deb3da7018f2\\transformed\\material-1.6.1\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "C:\\Users\\naman\\.gradle\\caches\\transforms-3\\4150df218e31421575260ee8ffd8a5cf\\transformed\\material-1.6.1\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
