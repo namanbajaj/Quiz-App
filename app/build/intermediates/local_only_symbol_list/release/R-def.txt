@@ -8,6 +8,7 @@ color teal_200
 color teal_700
 color white
 drawable border
+drawable borderblack
 drawable correct_option_border_bg
 drawable default_option_border_bg
 drawable ic_bg
@@ -45,6 +46,7 @@ id newQuiz
 id nextQuestion
 id open_app_button
 id prevQuestion
+id privacypolicybutton
 id progressBar
 id progressText
 id question

@@ -7,6 +7,7 @@ import android.graphics.Color
 import android.graphics.Typeface
 import android.opengl.Visibility
 import android.os.Bundle
+import android.view.HapticFeedbackConstants
 import android.view.View
 import android.widget.Button
 import android.widget.ProgressBar
@@ -160,6 +161,7 @@ class DoQuiz : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
+        v!!.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
         when(v?.id) {
             R.id.answer1 -> {
                 selectedOptionView(answer1!!, 0)
@@ -198,12 +200,15 @@ class DoQuiz : AppCompatActivity(), View.OnClickListener {
                 else {
                     if(selectedOptionPosition == -1) {
                         Toast.makeText(this, "Please select an answer", Toast.LENGTH_SHORT).show()
+                        v!!.performHapticFeedback(HapticFeedbackConstants.REJECT)
                     } else {
                         if(questions[currentPosition].rightAnswerIndex == selectedOptionPosition) {
                             answerView(selectedOptionPosition, R.drawable.correct_option_border_bg)
+                            v!!.performHapticFeedback(HapticFeedbackConstants.CONFIRM)
                             score++
                         } else {
                             answerView(selectedOptionPosition, R.drawable.wrong_option_border_bg)
+                            v!!.performHapticFeedback(HapticFeedbackConstants.REJECT)
                             questionToReview.add(questions[currentPosition].question)
                         }
                         currentPosition++

@@ -1,16 +1,31 @@
 package com.namanbajaj.quizapp
 
+import android.Manifest
 import android.annotation.SuppressLint
 import android.app.ActivityOptions
+import android.app.AlertDialog
 import android.content.Intent
+import android.database.sqlite.SQLiteDatabase
 import android.graphics.Color
 import android.graphics.Typeface
+import android.net.Uri
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
+import android.view.HapticFeedbackConstants
+import android.view.View
 import android.widget.*
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.annotation.RequiresApi
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 
 class QuizList : AppCompatActivity() {
+
+    var previouslySelectedRadioButtonId: Int = -1
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_list)
@@ -39,9 +54,26 @@ class QuizList : AppCompatActivity() {
             button.typeface = Typeface.DEFAULT_BOLD
             button.setBackgroundResource(R.drawable.border)
             button.gravity = Gravity.CENTER
+
+            button.buttonDrawable = null
+
             quizList.addView(button)
         }
 
+        quizList.setOnCheckedChangeListener { radioGroup, i ->
+            radioGroup.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
+            var selectedQuiz = quizList.checkedRadioButtonId
+            println(selectedQuiz)
+            var radioButton = findViewById<RadioButton>(selectedQuiz)
+            if(selectedQuiz != -1) {
+                radioButton.background = ContextCompat.getDrawable(this, R.drawable.selected_option_border_bg)
+                if(previouslySelectedRadioButtonId != -1 && previouslySelectedRadioButtonId != selectedQuiz){
+                    var previouslySelectedRadioButton = findViewById<RadioButton>(previouslySelectedRadioButtonId)
+                    previouslySelectedRadioButton.background = ContextCompat.getDrawable(this, R.drawable.border)
+                }
+                previouslySelectedRadioButtonId = selectedQuiz
+            }
+        }
 
 
         val doQuiz = findViewById<Button>(R.id.doQuiz)
@@ -49,11 +81,12 @@ class QuizList : AppCompatActivity() {
         val editQuiz = findViewById<Button>(R.id.editQuiz)
         val deleteQuiz = findViewById<Button>(R.id.deleteQuiz)
 
-        doQuiz.setOnClickListener{
+        doQuiz.setOnClickListener{ view ->
             var selectedQuiz = quizList.checkedRadioButtonId
             println(selectedQuiz)
             var radioButton = findViewById<RadioButton>(selectedQuiz)
             if(selectedQuiz != -1){
+                view.performHapticFeedback(HapticFeedbackConstants.CONFIRM)
                 var quizName = radioButton.text
                 println(quizName)
                 val intent = Intent(this, DoQuiz::class.java)
@@ -61,22 +94,25 @@ class QuizList : AppCompatActivity() {
                 startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
             }
             else{
+                view.performHapticFeedback(HapticFeedbackConstants.REJECT)
                 val toast = Toast.makeText(this, "Please select a quiz", Toast.LENGTH_LONG)
                 toast.show()
             }
         }
 
-        newQuiz.setOnClickListener{
+        newQuiz.setOnClickListener{ view ->
+            view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
             val intent = Intent(this, NewQuiz::class.java)
             intent.putStringArrayListExtra("Current Quiz Names", names)
             startActivity(intent)
         }
 
-        editQuiz.setOnClickListener{
+        editQuiz.setOnClickListener{ view ->
             var selectedQuiz = quizList.checkedRadioButtonId
             println(selectedQuiz)
             var radioButton = findViewById<RadioButton>(selectedQuiz)
             if(selectedQuiz != -1){
+                view.performHapticFeedback(HapticFeedbackConstants.CONFIRM)
                 var quizName = radioButton.text
                 println(quizName)
                 val intent = Intent(this, AddOrEditQuiz::class.java)
@@ -84,16 +120,18 @@ class QuizList : AppCompatActivity() {
                 startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
             }
             else{
+                view.performHapticFeedback(HapticFeedbackConstants.REJECT)
                 val toast = Toast.makeText(this, "Please select a quiz", Toast.LENGTH_LONG)
                 toast.show()
             }
         }
 
-        deleteQuiz.setOnClickListener{
+        deleteQuiz.setOnClickListener{ view ->
             var selectedQuiz = quizList.checkedRadioButtonId
             println(selectedQuiz)
             var radioButton = findViewById<RadioButton>(selectedQuiz)
             if(selectedQuiz != -1){
+                view.performHapticFeedback(HapticFeedbackConstants.CONFIRM)
                 var quizName = radioButton.text
                 println(quizName)
                 val db = DBHelper(this, null)
@@ -102,9 +140,18 @@ class QuizList : AppCompatActivity() {
                 recreate()
             }
             else{
+                view.performHapticFeedback(HapticFeedbackConstants.REJECT)
                 val toast = Toast.makeText(this, "Please select a quiz", Toast.LENGTH_LONG)
                 toast.show()
             }
+        }
+
+        val privacypolicy = findViewById<TextView>(R.id.privacypolicybutton)
+        privacypolicy.setOnClickListener{ view ->
+            view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
+            val intent = Intent(android.content.Intent.ACTION_VIEW)
+            intent.data = Uri.parse("https://sites.google.com/view/quizbiz-privacy-policy/home")
+            startActivity(intent)
         }
     }
 

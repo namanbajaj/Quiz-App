@@ -4,6 +4,7 @@ import android.app.ActivityOptions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.HapticFeedbackConstants
 import android.widget.Button
 import android.widget.TextView
 
@@ -19,13 +20,15 @@ class AddOrEditQuiz : AppCompatActivity() {
         val addQuestions = findViewById<Button>(R.id.addquestions)
         val editQuestions = findViewById<Button>(R.id.editquestions)
 
-        addQuestions.setOnClickListener {
+        addQuestions.setOnClickListener { view ->
+            view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
             val intent = Intent(this, EditQuizQuestions::class.java)
             intent.putExtra("New Name", quizName)
             startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
         }
 
-        editQuestions.setOnClickListener {
+        editQuestions.setOnClickListener { view ->
+            view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
             val intent = Intent(this, EditQuiz::class.java)
             intent.putExtra("Quiz Name", quizName)
             startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
