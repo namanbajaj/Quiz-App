@@ -2,7 +2,7 @@ package com.namanbajaj.quizapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.InputType
+import android.util.Log
 import android.view.HapticFeedbackConstants
 import android.view.KeyEvent
 import android.view.View
@@ -43,7 +43,8 @@ class NewQuiz : AppCompatActivity() {
 
         quizName.setOnKeyListener(object : View.OnKeyListener {
             override fun onKey(arg0: View?, arg1: Int, event: KeyEvent): Boolean {
-                if (event.action === KeyEvent.ACTION_DOWN && arg1 == KeyEvent.KEYCODE_ENTER) {
+                Log.i("Key pressed: ", arg1.toString())
+                if (event.action == KeyEvent.ACTION_DOWN && arg1 == KeyEvent.KEYCODE_ENTER) {
                     val imm: InputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
                     imm.hideSoftInputFromWindow(quizName.windowToken, 0)
                     return true

@@ -24,6 +24,8 @@
             android:layout_height="match_parent"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
+            android:background="@color/background_color"
+            android:textColor="@color/text_color"
             android:padding="10dp">
 
             <TextView
@@ -63,6 +65,8 @@
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal|center_vertical"
                 android:orientation="vertical"
+                android:background="@color/background_color"
+                android:textColor="@color/text_color"
                 android:padding="10dp">
 
                 <EditText
@@ -91,6 +95,8 @@
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal|center_vertical"
                 android:orientation="vertical"
+                android:background="@color/background_color"
+                android:textColor="@color/text_color"
                 android:padding="10dp">
 
                 <EditText
@@ -118,6 +124,8 @@
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal|center_vertical"
                 android:orientation="vertical"
+                android:background="@color/background_color"
+                android:textColor="@color/text_color"
                 android:padding="10dp">
 
                 <EditText
@@ -145,6 +153,8 @@
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal|center_vertical"
                 android:orientation="vertical"
+                android:background="@color/background_color"
+                android:textColor="@color/text_color"
                 android:padding="10dp">
 
                 <EditText
@@ -172,6 +182,8 @@
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal|center_vertical"
                 android:orientation="vertical"
+                android:background="@color/background_color"
+                android:textColor="@color/text_color"
                 android:padding="10dp">
 
                 <EditText
@@ -206,6 +218,8 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
+            android:background="@color/background_color"
+            android:textColor="@color/text_color"
             android:padding="10dp">
 
             <TextView
@@ -214,7 +228,6 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="Indicate Correct Answer Choice"
-                android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -230,7 +243,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="@color/black"
                         android:text="1" />
 
                     <RadioButton
@@ -238,7 +250,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="@color/black"
                         android:text="2" />
 
                     <RadioButton
@@ -246,7 +257,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="@color/black"
                         android:text="3" />
 
                     <RadioButton
@@ -254,7 +264,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="@color/black"
                         android:text="4" />
 
             </RadioGroup>

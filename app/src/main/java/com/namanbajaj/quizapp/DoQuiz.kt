@@ -1,11 +1,9 @@
 package com.namanbajaj.quizapp
 
-import android.R.array
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
-import android.opengl.Visibility
 import android.os.Bundle
 import android.view.HapticFeedbackConstants
 import android.view.View
@@ -16,8 +14,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import java.util.*
-import kotlin.collections.ArrayList
-import kotlin.random.Random
 
 
 class DoQuiz : AppCompatActivity(), View.OnClickListener {
@@ -38,6 +34,8 @@ class DoQuiz : AppCompatActivity(), View.OnClickListener {
 
     private var submit : Button? = null
 
+    private var goHome : Button? = null
+
     private var submitState: Boolean = false
 
     private var questionToReview: ArrayList<String> = ArrayList()
@@ -55,12 +53,19 @@ class DoQuiz : AppCompatActivity(), View.OnClickListener {
         answer3 = findViewById(R.id.answer3)
         answer4 = findViewById(R.id.answer4)
         submit = findViewById(R.id.submitButton)
+        goHome = findViewById(R.id.goHomeButton)
 
         answer1?.setOnClickListener(this)
         answer2?.setOnClickListener(this)
         answer3?.setOnClickListener(this)
         answer4?.setOnClickListener(this)
         submit?.setOnClickListener(this)
+
+        goHome?.setOnClickListener {
+            val intent = Intent(this, QuizList::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         val quizName = intent.getStringExtra("Quiz Name").toString()
         val db = DBHelper(this, null)

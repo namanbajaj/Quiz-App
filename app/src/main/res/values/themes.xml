@@ -14,4 +14,6 @@
         <item name="android:windowFullscreen">true</item>
         <!-- Customize your theme here. -->
     </style>
+    <color name="background_color">#FFFFFF</color>
+    <color name="text_color">#000000</color>
 </resources>

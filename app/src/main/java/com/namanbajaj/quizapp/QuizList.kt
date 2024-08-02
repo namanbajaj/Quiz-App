@@ -1,25 +1,16 @@
 package com.namanbajaj.quizapp
 
-import android.Manifest
 import android.annotation.SuppressLint
 import android.app.ActivityOptions
-import android.app.AlertDialog
 import android.content.Intent
-import android.database.sqlite.SQLiteDatabase
 import android.graphics.Color
 import android.graphics.Typeface
 import android.net.Uri
-import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.HapticFeedbackConstants
-import android.view.View
 import android.widget.*
-import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.annotation.RequiresApi
-import androidx.core.app.ActivityCompat
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
 class QuizList : AppCompatActivity() {
@@ -31,7 +22,6 @@ class QuizList : AppCompatActivity() {
         setContentView(R.layout.activity_quiz_list)
 
         val names = loadData()
-//        println("size is " + names.size)
 
         for(qname in names)
             println(qname)

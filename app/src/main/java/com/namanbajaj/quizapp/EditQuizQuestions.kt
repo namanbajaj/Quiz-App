@@ -3,14 +3,13 @@ package com.namanbajaj.quizapp
 import android.annotation.SuppressLint
 import android.app.ActivityOptions
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.HapticFeedbackConstants
 import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
-import java.lang.Exception
+import androidx.appcompat.app.AppCompatActivity
 
 class EditQuizQuestions : AppCompatActivity() {
     lateinit var questionField : EditText

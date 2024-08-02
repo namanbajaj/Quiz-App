@@ -49,10 +49,10 @@
             android:layout_marginBottom="70dp"
             android:gravity="center"
             android:textSize="25sp"
-            android:background="@color/white"
+            android:background="@color/background_color"
             tools:text="Question"
             android:padding="10dp"
-            android:textColor="#363A43" />
+            android:textColor="@color/text_color" />
 
         <TextView
             android:id="@+id/answer1"
@@ -64,7 +64,7 @@
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
-            android:textColor="#7A8089"
+            android:textColor="@color/text_color"
             android:textSize="18sp"
             tools:text="Apple" />
 
@@ -78,7 +78,7 @@
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
-            android:textColor="#7A8089"
+            android:textColor="@color/text_color"
             android:textSize="18sp"
             tools:text="Google" />
 
@@ -93,7 +93,7 @@
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
-            android:textColor="#7A8089"
+            android:textColor="@color/text_color"
             android:textSize="18sp"
             tools:text="Android Inc." />
 
@@ -108,7 +108,7 @@
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
-            android:textColor="#7A8089"
+            android:textColor="@color/text_color"
             android:textSize="18sp"
             tools:text="Nokia" />
 
@@ -121,6 +121,18 @@
             android:textColor="@color/white"
             android:padding="15dp"
             android:text="SUBMIT"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/goHomeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:text="GO HOME"
             android:textSize="18sp"
             android:textStyle="bold" />
 

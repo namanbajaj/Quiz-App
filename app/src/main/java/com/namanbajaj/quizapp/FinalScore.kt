@@ -2,11 +2,11 @@ package com.namanbajaj.quizapp
 
 import android.app.ActivityOptions
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.RadioGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.setPadding
 
 class FinalScore : AppCompatActivity() {

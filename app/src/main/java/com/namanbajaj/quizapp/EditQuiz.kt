@@ -3,14 +3,13 @@ package com.namanbajaj.quizapp
 import android.annotation.SuppressLint
 import android.app.ActivityOptions
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.HapticFeedbackConstants
 import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
-import java.lang.Exception
+import androidx.appcompat.app.AppCompatActivity
 
 class EditQuiz : AppCompatActivity() {
 
@@ -55,7 +54,6 @@ class EditQuiz : AppCompatActivity() {
         }
 
         // Disable radio buttons
-
         rightAnswerRadio = findViewById<RadioGroup>(R.id.rightAnswerGroup)
         r1 = findViewById<RadioButton>(R.id.checkBox1)
         r2 = findViewById<RadioButton>(R.id.checkBox2)
@@ -265,6 +263,10 @@ class EditQuiz : AppCompatActivity() {
         prev = findViewById<Button>(R.id.prevQuestion)
         next = findViewById<Button>(R.id.nextQuestion)
 
+        prev.visibility = View.INVISIBLE
+        if(questions.size == 1)
+            next.visibility = View.INVISIBLE
+
         editQuestion.setOnClickListener { view ->
             view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
 
@@ -333,12 +335,15 @@ class EditQuiz : AppCompatActivity() {
 
             view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
 
+            if(prev.visibility == View.INVISIBLE)
+                prev.visibility = View.VISIBLE
+
             curIndex++
-            if(curIndex < questions.size){
-                loadQuestion(questions, curIndex)
-            }
-            else
+            if(curIndex >= questions.size - 1) {
+                next.visibility = View.INVISIBLE
                 curIndex = questions.size - 1
+            }
+            loadQuestion(questions, curIndex)
         }
 
         prev.setOnClickListener { view ->
@@ -350,12 +355,15 @@ class EditQuiz : AppCompatActivity() {
 
             view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
 
+            if(next.visibility == View.INVISIBLE)
+                next.visibility = View.VISIBLE
+
             curIndex--
-            if(curIndex >= 0){
-                loadQuestion(questions, curIndex)
-            }
-            else
+            if(curIndex <= 0){
+                prev.visibility = View.INVISIBLE
                 curIndex = 0
+            }
+            loadQuestion(questions, curIndex)
         }
 
         val deleteButton = findViewById<Button>(R.id.deleteQuestion)
@@ -448,7 +456,7 @@ class EditQuiz : AppCompatActivity() {
                 || (answer1 == answer4)
                 || (answer2 == answer3)
                 || (answer2 == answer4)
-                || (answer3 == answer4 && answer3 != "" && answer4 != "")
+                || (answer3 == answer4 && answer3 != "")
     }
 
     fun addHideKeyboardOnEnter(){
