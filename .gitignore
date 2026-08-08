@@ -1,16 +1,41 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Built application files
+*.apk
+*.aab
+*.aar
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated build directories & caches
+.gradle/
+.kotlin/
+build/
+app/build/
+
+# Local configuration & environment setup
 local.properties
-app/build
+
+# Android Studio / IntelliJ IDEA settings
+.idea/
+*.iml
+
+# Keystores & sensitive signing files
+# (Includes the 'keystore' and 'release' output folders present in your app directory)
+*.jks
+*.keystore
+app/keystore/
+app/release/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Native build artifacts (NDK)
+.externalNativeBuild
+.cxx/
+
+# Profiling and capture outputs
+/captures
